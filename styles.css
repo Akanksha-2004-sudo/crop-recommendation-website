@@ -1,0 +1,75 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.image-container {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for text visibility */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+p {
+    color: white;
+    font-size: 18px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: calc(100% - 20px);
+    max-width: 400px;
+}
+
+input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Background Images */
+.home {
+    background-image: url('C:\Users\akank\Desktop\crop-recommendation\static\images\home1.jpg');
+}
+
+.input {
+    background-image: url('C:\Users\akank\Desktop\crop-recommendation\static\images\crop_background.jpg');
+}
+
+.result {
+    background-image: url('C:\Users\akank\Desktop\crop-recommendation\static\images\peek.jpg');
+}

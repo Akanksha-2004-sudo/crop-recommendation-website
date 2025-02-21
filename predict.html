@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction - Crop Recommendation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .result {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ensures it occupies the full height of the viewport */
+            background-image: url('{{ url_for('static', filename='images/peek.jpg') }}');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .content {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark overlay for readability */
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a slight shadow for depth */
+        }
+
+        h1 {
+            color: white;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: white;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="predict">
+        <div class="content">
+            <h1>Prediction Result</h1>
+            <p id="result-text">Recommended Crop: {{ prediction }}</p>
+            <button onclick="window.location.href='/'">Back to Home</button>
+        </div>
+    </div>
+</body>
+</html>
